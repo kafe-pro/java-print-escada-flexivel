@@ -30,6 +30,7 @@ class HelloCodiva {
                     **
                     */
                     for(int i = 1 ; i <= xquadrado ; i++){
+                        asterisco = 0;
                         igualarColuna = 0;
 
                         do{
