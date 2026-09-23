@@ -5,11 +5,15 @@ class HelloCodiva {
   public static void main(String[] args) {
     
     Scanner input = new Scanner(System.in);
+    int coluna = 1;
     int igualarColuna = 0;
     int asterisco = 0;
     int espaco = 4;
-    int coluna = 1;
     int imagens = 1;
+    int xquadrado = 0;
+
+    System.out.println("Qual o tamanho da imagem?");
+    xquadrado = input.nextInt();
 
     do{
         System.out.println("Qual imagem você deseja imprimir?");
@@ -21,13 +25,24 @@ class HelloCodiva {
             coluna = input.nextInt();
             if(coluna > 0){
                 if(imagens == 2 || imagens == 1){
-                    // Imagem 1
-                    for(int i = 1 ; i <= 4 ; i++){
+                    /* Imagem 1
+                    **
+                    **
+                    */
+                    for(int i = 1 ; i <= xquadrado ; i++){
                         igualarColuna = 0;
 
                         do{
                             System.out.print("*");
                             igualarColuna++;
+
+                            asterisco++;
+
+                            if(asterisco >= xquadrado){
+                                asterisco = 0;
+                                System.out.print(" ");
+                                igualarColuna++;
+                            }
                         }while(igualarColuna < coluna);
                 
                         System.out.println("");
@@ -37,10 +52,13 @@ class HelloCodiva {
                 }
 
                 if(imagens == 3 || imagens == 1){
-                    // Imagem 2
+                    /* Imagem 2
+                    **
+                    *
+                    */
                     asterisco = 0;
-                    espaco = 4;
-                    for(int i = 1 ; i <= 4 ; i++){
+                    espaco = xquadrado;
+                    for(int i = 1 ; i <= xquadrado ; i++){
                         igualarColuna = 0;
                         asterisco = 0;
 
@@ -56,8 +74,10 @@ class HelloCodiva {
 
                             asterisco++;
 
-                            if(asterisco >= 4){
+                            if(asterisco >= xquadrado){
                                 asterisco = 0;
+                                System.out.print(" ");
+                                igualarColuna++;
                             }
                         }while(igualarColuna < coluna);
 
@@ -69,10 +89,13 @@ class HelloCodiva {
                 }
 
                 if(imagens == 4 || imagens == 1){
-                    // Imagem 3
+                    /* Imagem 3
+                     *
+                    **
+                    */
                     asterisco = 0;
-                    espaco = 3;
-                    for(int i = 1 ; i <= 4 ; i++){
+                    espaco = xquadrado-1;
+                    for(int i = 1 ; i <= xquadrado ; i++){
                         igualarColuna = 0;
                         asterisco = 0;
 
@@ -88,8 +111,10 @@ class HelloCodiva {
 
                             asterisco++;
 
-                            if(asterisco >= 4){
+                            if(asterisco >= xquadrado){
                                 asterisco = 0;
+                                System.out.print(" ");
+                                igualarColuna++;
                             }
                         }while(igualarColuna < coluna);
 
@@ -101,10 +126,13 @@ class HelloCodiva {
                 }
 
                 if(imagens == 5 || imagens == 1){
-                    // Imagem 4
+                    /* Imagem 4
+                    **
+                     *
+                    */
                     asterisco = 0;
                     espaco = 0;
-                    for(int i = 1 ; i <= 4 ; i++){
+                    for(int i = 1 ; i <= xquadrado ; i++){
                         igualarColuna = 0;
                         asterisco = 0;
 
@@ -120,8 +148,10 @@ class HelloCodiva {
 
                             asterisco++;
 
-                            if(asterisco >= 4){
+                            if(asterisco >= xquadrado){
                                 asterisco = 0;
+                                System.out.print(" ");
+                                igualarColuna++;
                             }
                         }while(igualarColuna < coluna);
 
@@ -133,10 +163,13 @@ class HelloCodiva {
                 }
 
                 if(imagens == 6 || imagens == 1){
-                    // Imagem 5
+                    /* Imagem 5
+                    * 
+                    **
+                    */
                     asterisco = 0;
                     espaco = 1;
-                    for(int i = 1 ; i <= 4 ; i++){
+                    for(int i = 1 ; i <= xquadrado ; i++){
                         igualarColuna = 0;
                         asterisco = 0;
 
@@ -152,8 +185,10 @@ class HelloCodiva {
 
                             asterisco++;
 
-                            if(asterisco >= 4){
+                            if(asterisco >= xquadrado){
                                 asterisco = 0;
+                                System.out.print(" ");
+                                igualarColuna++;
                             }
                         }while(igualarColuna < coluna);
 
