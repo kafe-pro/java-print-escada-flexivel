@@ -18,14 +18,18 @@
     Define o tamanho da imagem (A imagem é sempre um quadrado x*x). 
 
 # Explicação
-    O código pede ao usuário o tamanho da imagem, um número inteiro que é atribuído a variável *"xquadrado"*.
+
+O código pede ao usuário o tamanho da imagem, um número inteiro que é atribuído a variável *"xquadrado"*.
+
 
 ```java
     System.out.println("Qual o tamanho da imagem?");
     xquadrado = input.nextInt();
 ```
 
-    O código pede ao usuário que escolha se deseja imprimir uma imagem específica ou todas as imagens, um número inteiro que é atribuído a variável *"imagens"*.
+
+> O código pede ao usuário que escolha se deseja imprimir uma imagem específica ou todas as imagens, um número inteiro que é atribuído a variável *"imagens"*.
+
 
 ```java
     do{
