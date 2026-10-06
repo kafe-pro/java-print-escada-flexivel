@@ -29,7 +29,7 @@
 ```
 
 
-É iniciada a estrutura de repetição. A condição de finalização dessa estrutura é a variável **"imagens"** ser igual a **0**.
+É iniciada a estrutura de repetição. A condição de finalização dessa estrutura é o valor da variável **"imagens"** ser igual a **0**.
 
 Por padrão a variável **"imagens"** tem como valor **"1"**.
 
@@ -47,7 +47,9 @@ O código pede ao usuário que escolha se deseja imprimir uma imagem específica
 
 ```java
     do{
+        // APÓS PEDIR O VALOR DE "imagens"
         if(imagens > 0 && imagens < 7){
+            // TODAS AS ESTRUTURAS DE PRINT DAS IMAGENS ESTÃO AQUI
         }
         else if(imagens < 0 || imagens > 6){
             System.out.println("\nOpção inválida!\n");
@@ -56,7 +58,7 @@ O código pede ao usuário que escolha se deseja imprimir uma imagem específica
 ```
 
 
-Primeiramente o código valida se o valor de **"imagens"** está entre 1-6, nesse caso o programa progride para o calculo e exibição de todas as imagens ou de uma imagem específica a depender da opção escolhida. Caso o valor de *"imagens"* for menor do que **"0"** ou maior do que **"6"** o sistema exibe uma mensagem de erro e pede ao usuário para digitar o valor da variável novamente.
+Primeiramente o código valida se o valor de **"imagens"** está entre 1-6, nesse caso o programa progride para o calculo e exibição de todas as imagens ou de uma imagem específica a depender da opção escolhida. Caso o valor de **"imagens"** for menor do que **"0"** ou maior do que **"6"** o sistema exibe uma mensagem de erro e pede ao usuário para digitar o valor da variável novamente.
 
 Em caso do valor da variável ser igual a **"0"** o código não executa nada e para.
 
