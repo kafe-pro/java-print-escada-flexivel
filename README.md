@@ -29,7 +29,9 @@
 
 
 O código pede ao usuário o tamanho da imagem, um número inteiro que é atribuído a variável **"xquadrado"**.
+
 A variável **"xquadrado"** é usada em todas as estruturas de print que geram as "escadas de asteriscos" para definidir o tamanho da imagem gerada.
+
 A imagem é sempre um quadrado perfeito, por isso nome da variável.
 
 
@@ -40,6 +42,7 @@ A imagem é sempre um quadrado perfeito, por isso nome da variável.
 
 
 É iniciada a estrutura de repetição. A condição de finalização dessa estrutura é a variável **"imagens"** ser igual a **0**.
+
 Por padrão a variável **"imagens"** tem como valor **"1"**.
 
 
@@ -62,4 +65,5 @@ O código pede ao usuário que escolha se deseja imprimir uma imagem específica
 
 
 Primeiramente o código valida se o valor de **"imagens"** está entre 1-6, nesse caso o programa progride para o calculo e exibição de todas as imagens ou de uma imagem específica a depender da opção escolhida. Caso o valor de *"imagens"* for menor do que **"0"** ou maior do que **"6"** o sistema exibe uma mensagem de erro e pede ao usuário para digitar o valor da variável novamente.
+
 Em caso do valor da variável ser igual a **"0"** o código não executa nada e para.
