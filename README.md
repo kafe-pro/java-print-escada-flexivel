@@ -23,20 +23,8 @@
 # Explicação
 
 ```java
-    System.out.println("Qual o tamanho da imagem?");
-    xquadrado = input.nextInt();
-```
-
-
-O código pede ao usuário o tamanho da imagem, um número inteiro que é atribuído a variável **"xquadrado"**.
-
-A variável **"xquadrado"** é usada em todas as estruturas de print que geram as "escadas de asteriscos" para definidir o tamanho da imagem gerada.
-
-A imagem é sempre um quadrado perfeito, por isso nome da variável.
-
-
-```java
     do{
+        // TODO O CÓDIGO ESTÁ DENTRO DESSA ESTRUTURA DE REPETIÇÃO
     }while(imagens != 0);
 ```
 
@@ -47,23 +35,48 @@ Por padrão a variável **"imagens"** tem como valor **"1"**.
 
 
 ```java
+    do{
         System.out.println("Qual imagem você deseja imprimir?");
         System.out.println("\n\"1 - TODAS.\"" + "\n\"2 - Imagem 1.\"" + "\n\"3 - Imagem 2.\"" + "\n\"4 - Imagem 3.\"" + "\n\"5 - Imagem 4.\"" + "\n\"6 - Imagem 5.\"" + "\n\"0 - Sair.\"");
         imagens = input.nextInt();
+    }while(imagens != 0);
 ```
 
 O código pede ao usuário que escolha se deseja imprimir uma imagem específica ou todas as imagens, um número inteiro que é atribuído a variável **"imagens"**.
 
 
 ```java
+    do{
         if(imagens > 0 && imagens < 7){
         }
         else if(imagens < 0 || imagens > 6){
             System.out.println("\nOpção inválida!\n");
         }
+    }while(imagens != 0);
 ```
 
 
 Primeiramente o código valida se o valor de **"imagens"** está entre 1-6, nesse caso o programa progride para o calculo e exibição de todas as imagens ou de uma imagem específica a depender da opção escolhida. Caso o valor de *"imagens"* for menor do que **"0"** ou maior do que **"6"** o sistema exibe uma mensagem de erro e pede ao usuário para digitar o valor da variável novamente.
 
 Em caso do valor da variável ser igual a **"0"** o código não executa nada e para.
+
+
+```java
+    do{
+        if(imagens > 0 && imagens < 7){
+            System.out.println("Qual o tamanho da imagem?");
+            xquadrado = input.nextInt();
+
+            System.out.println("Quantas colunas você deseja?");
+            coluna = input.nextInt();
+        }
+```
+
+
+1. O código pede ao usuário o tamanho da imagem, um número inteiro que é atribuído a variável **"xquadrado"**.
+
+    A variável **"xquadrado"** é usada em todas as estruturas de print que geram as "escadas de asteriscos" para definidir o tamanho da imagem gerada.
+
+    A imagem é sempre um quadrado perfeito, por isso nome da variável.
+
+2. O código pede ao usuário a quantidade de colunas da imagem, um número inteiro que é atribuído a variável **"coluna"**.
